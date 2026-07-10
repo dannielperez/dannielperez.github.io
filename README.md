@@ -6,7 +6,7 @@ The source for [Danniel Perez’s personal site](https://dannielperez.github.io)
 
 - A responsive editorial/terminal-inspired homepage
 - A Jekyll-powered writing archive
-- Links to [GitHub](https://github.com/dannielperez) and [LinkedIn](https://www.linkedin.com/in/dannielperez/)
+- Links to [GitHub](https://github.com/dannielperez) and [LinkedIn](https://www.linkedin.com/in/danniel-perez-velez/)
 - Small interactive touches, including a live Puerto Rico clock and randomized status messages
 
 ## Local development
