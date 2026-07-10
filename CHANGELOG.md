@@ -121,7 +121,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 ## v2.2.0 (2020-04-27)
 
 - Added social network link: Telegram (#625) (thanks @mashed-potatoes)
-- Moved the demo site to an independent URL: https://beautifuljekyll.com
+- Moved the demo site to an independent URL; this fork now lives at https://dannielperez.github.io
 - Major documentation overhaul and cleanup of old files
 - Fixed a few bugs from the remote_theme migration
 
@@ -210,4 +210,3 @@ One of the major changes in this version is that a lot of time was spent on reth
 ... Many small changes because the site was in its infancy
 
 **2015-03-12** Beautiful Jekyll version 0.0000001 is released!
-
