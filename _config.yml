@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Danniel Perez Website
+title: Danniel Perez
 
 # Your name to show in the footer
 author: Danniel Perez
@@ -20,10 +20,9 @@ author: Danniel Perez
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  About: "aboutme"
+  Writing: "/#notes"
+  GitHub: "https://github.com/dannielperez"
 
 ################
 # --- Logo --- #
@@ -48,16 +47,9 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
+  rss: true
+  github: dannielperez
+  linkedin: dannielperez
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -78,7 +70,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Notes, experiments, and internet ephemera from Danniel Perez.
 
 ###########################
 # --- General options --- #
@@ -93,7 +85,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "dannielperez.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -124,17 +116,17 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+navbar-col: "#10100f"
+navbar-text-col: "#f3f0e8"
+navbar-border-col: "#32312e"
+page-col: "#f3f0e8"
+text-col: "#191917"
+link-col: "#e14b2a"
+hover-col: "#a72b12"
+footer-col: "#10100f"
+footer-text-col: "#aaa69d"
+footer-link-col: "#f3f0e8"
+footer-hover-col: "#ff7657"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -144,11 +136,11 @@ footer-hover-col: "#0085A1"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#10100f"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/modern.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -288,4 +280,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-

@@ -1,5 +1,119 @@
 ---
-layout: home
-title: Danniel Perez Website
-subtitle: This is where I will tell my friends way too much about me
+layout: base
+title: Danniel Perez — Internet Person
+subtitle: Small experiments, loose thoughts, and evidence of curiosity.
+body-class: modern-home
+js:
+  - "/assets/js/modern-home.js"
 ---
+
+<main class="landing" id="main-content">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> Online-ish from Puerto Rico</p>
+      <h1 id="hero-title">I make things,<br><em>then make them better.</em></h1>
+      <p class="hero-lede">Hi, I’m Danniel. This is my small corner of the internet—a deliberately loose collection of code, notes, experiments, and whatever else seemed interesting that day.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://github.com/dannielperez" target="_blank" rel="noopener">Explore my GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button button-ghost" href="https://www.linkedin.com/in/dannielperez/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <aside class="hero-console" aria-label="A playful system status panel">
+      <div class="console-bar"><span></span><span></span><span></span><b>dperez.local</b></div>
+      <div class="console-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="console-answer">Danniel Perez</p>
+        <p><span class="prompt">$</span> current_mode</p>
+        <p class="console-answer" id="current-mode">building something unnecessarily specific</p>
+        <p><span class="prompt">$</span> uptime</p>
+        <p class="console-answer">long enough to know better<span class="cursor" aria-hidden="true"></span></p>
+      </div>
+      <button class="shuffle" id="shuffle-mode" type="button">Shuffle status <span aria-hidden="true">↻</span></button>
+    </aside>
+  </section>
+
+  <section class="ticker" aria-label="Current interests">
+    <div class="ticker-track">
+      <span>CODE THAT WORKS</span><i>✦</i><span>TINY AUTOMATIONS</span><i>✦</i><span>GOOD COFFEE</span><i>✦</i><span>QUESTIONABLE SIDE PROJECTS</span><i>✦</i><span>CODE THAT WORKS</span><i>✦</i><span>TINY AUTOMATIONS</span><i>✦</i><span>GOOD COFFEE</span><i>✦</i><span>QUESTIONABLE SIDE PROJECTS</span><i>✦</i>
+    </div>
+  </section>
+
+  <section class="section lab" aria-labelledby="lab-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">01 / The lab</p>
+        <h2 id="lab-title">Things in various states of done.</h2>
+      </div>
+      <p>Not a résumé. More like a workbench.</p>
+    </div>
+
+    <div class="bento-grid">
+      <article class="lab-card lab-card-featured">
+        <div class="card-topline"><span>PROJECT_001</span><span class="pill">ACTIVE</span></div>
+        <div>
+          <p class="card-kicker">Open-source archaeology</p>
+          <h3>GitHub is where the useful mess lives.</h3>
+          <p>Repositories, experiments, half-finished ideas, and the occasional thing that’s actually handy.</p>
+        </div>
+        <a href="https://github.com/dannielperez?tab=repositories" target="_blank" rel="noopener">Browse repositories <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="lab-card metric-card">
+        <div class="card-topline"><span>LOCAL_TIME</span><span>AST</span></div>
+        <div class="big-number" id="local-time">--:--</div>
+        <p>Puerto Rico<br>18.2208° N, 66.5901° W</p>
+      </article>
+
+      <article class="lab-card quote-card">
+        <div class="card-topline"><span>NOTE_TO_SELF.TXT</span><span>↗</span></div>
+        <blockquote>“A finished tiny thing beats a perfect imaginary thing.”</blockquote>
+        <p>— probably learned the hard way</p>
+      </article>
+
+      <article class="lab-card stack-card">
+        <div class="card-topline"><span>CURRENT_STACK</span><span>04 ITEMS</span></div>
+        <ul>
+          <li><span>01</span> Python when it matters</li>
+          <li><span>02</span> JavaScript when it must</li>
+          <li><span>03</span> Git for the plot</li>
+          <li><span>04</span> Curiosity everywhere</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section notes" id="notes" aria-labelledby="notes-title">
+    <div class="section-heading notes-heading">
+      <div>
+        <p class="eyebrow">02 / Field notes</p>
+        <h2 id="notes-title">From the archive.</h2>
+      </div>
+      <p>Old posts, demo content, and random transmissions kept alive for posterity.</p>
+    </div>
+
+    <div class="notes-list">
+      {% assign posts = site.posts | limit: 4 %}
+      {% for post in posts %}
+      <a class="note-row" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        <span class="note-title">{{ post.title }}</span>
+        <span class="note-tags">{% if post.tags.size > 0 %}{{ post.tags | join: " / " }}{% else %}misc{% endif %}</span>
+        <span class="note-arrow" aria-hidden="true">↗</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="contact-card" aria-labelledby="contact-title">
+    <p class="eyebrow">03 / Ping me</p>
+    <h2 id="contact-title">The internet is better<br>with <em>open tabs.</em></h2>
+    <p>See what I’m building, connect professionally, or simply inspect the commit history.</p>
+    <div class="contact-links">
+      <a href="https://github.com/dannielperez" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+      <a href="https://www.linkedin.com/in/dannielperez/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS feed <span>↗</span></a>
+    </div>
+  </section>
+</main>
